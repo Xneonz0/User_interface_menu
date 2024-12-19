@@ -1,73 +1,102 @@
 # User Interface Menu
 
 ## Overview
-The **User Interface Menu** is an interactive Python project that provides a user-friendly interface to explore and manipulate fundamental data structures:
+This project, **User Interface Menu**, is a culmination of what I learned during my Python Advanced course. It is an interactive system designed to explore and manipulate fundamental data structures, showcasing both my understanding of core concepts and their practical implementation. The project includes a terminal-based interface and a graphical user interface (GUI) built with Tkinter.
 
-- **Linked List**
-- **Stack**
-- **Queue**
+### Key Features:
+- **Linked List**: Dynamic list operations.
+- **Stack**: LIFO (Last In, First Out) operations.
+- **Queue**: FIFO (First In, First Out) operations.
 
-The application supports two modes:
-1. **Terminal-Based Interface**: For direct interaction through the command line.
-2. **Graphical User Interface (GUI)**: A visually intuitive system built with Tkinter to demonstrate real-time operations on data structures.
-
-
+Both the terminal and GUI versions allow for real-time data manipulation and visualization.
 
 ---
 
-## Features
+## Components
 
-### Linked List
-- Insert nodes at the beginning or end of the list.
-- Delete nodes by student ID.
-- Display all nodes with detailed student information:
-  - **Name**
-  - **Gender**
-  - **ID**
-  - **Age**
+### 1. Linked List
+- **File**: `LinkedList.py`
+- **Features**:
+  - Insert nodes at the beginning or end of the list.
+  - Delete nodes by student ID.
+  - Display all nodes with detailed student information.
 
-### Stack
-- Push student nodes onto the stack.
-- Pop the top node off the stack.
-- Display all nodes with complete student details.
+### 2. Node
+- **File**: `Node.py`
+- **Description**:
+  - Represents an individual node in a data structure.
+  - Contains student data and a reference to the next node.
 
-### Queue
-- Enqueue student nodes into the queue.
-- Dequeue the front node from the queue.
-- Display all nodes with detailed information.
+### 3. Queue
+- **File**: `Queue.py`
+- **Features**:
+  - Enqueue (add) student nodes.
+  - Dequeue (remove) nodes from the front.
+  - Display the current state of the queue.
 
-### Graphical User Interface (GUI)
-- **Modern Design**: Built using Tkinter for an intuitive experience.
-- **Dynamic Real-Time Updates**:
-  - Adding nodes.
-  - Deleting nodes.
-  - Displaying the current state of the data structure.
-- Maintains data integrity and visualization when navigating menus.
+### 4. Stack
+- **File**: `Stack.py`
+- **Features**:
+  - Push (add) student nodes onto the stack.
+  - Pop (remove) nodes from the top.
+  - Display the current state of the stack.
 
-### Error Handling
-- Validates user input (e.g., name, gender, ID, age).
-- Handles invalid operations gracefully (e.g., deleting from an empty stack or queue).
+### 5. Student
+- **File**: `Student.py`
+- **Description**:
+  - Represents a student with attributes:
+    - Name
+    - Gender
+    - ID
+    - Age
 
----
+### 6. Terminal-Based Menu
+- **File**: `UserInterfaceMenu.py`
+- **Description**:
+  - A command-line interface to:
+    - Manage Linked List, Stack, and Queue.
+    - Add, remove, and display student data interactively.
 
-## Technologies Used
-- **Programming Language**: Python
-- **Modules**:
-  - `tkinter` for GUI development.
-  - Custom implementations for:
-    - `LinkedList`
-    - `Stack`
-    - `Queue`
-    - `Node`
-    - `Student`
+### 7. Graphical User Interface (GUI)
+- **File**: `UserInterfaceMenuGUI.py`
+- **Features**:
+  - Intuitive GUI built with Tkinter.
+  - Real-time visualization of data structures.
+  - Interactive buttons for each operation (add, remove, display).
 
 ---
 
 ## How to Run
 
-### Requirements
-- Python 3.x installed on your system.
+### Prerequisites
+- Python 3.x
 
 ### Running the Terminal Version
 ```bash
 python UserInterfaceMenu.py
+```
+
+### Running the GUI Version
+```bash
+python UserInterfaceMenuGUI.py
+```
+
+---
+
+## Technologies Used
+- **Programming Language**: Python
+- **GUI Framework**: Tkinter
+
+---
+
+## Lessons Learned
+This project has been a significant milestone in my Python Advanced course, helping me to:
+- Understand and implement data structures like Linked List, Stack, and Queue.
+- Work with object-oriented programming concepts such as classes and methods.
+- Create interactive GUIs with Tkinter.
+- Develop problem-solving skills through real-world scenarios.
+
+---
+
+## License
+This project is licensed under the MIT License.
